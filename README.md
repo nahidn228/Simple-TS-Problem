@@ -7,7 +7,7 @@ seem a little... mysterious at first. Two such handy tools are `keyof` and
 
 ---
 
-## 🔑 What is the use of the `keyof` in TypeScript?
+## 1. What is the use of the `keyof` in TypeScript?
 
 Imagine you have an object, and you want to work with its keys (like `"name"`,
 `"age"`, etc.) TypeScript will help you avoid typos and mistakes.
@@ -15,7 +15,7 @@ Imagine you have an object, and you want to work with its keys (like `"name"`,
 That’s where `keyof` comes in. It lets you create a new type made up of all the
 keys from another type.
 
-### 📦 Real-world example:
+###  Real-world example:
 
 ```ts
 type Person = {
@@ -48,7 +48,7 @@ console.log(getValue(person, "name")); // Output: "Nahid"
 
 ---
 
-## 🚩 What are `enum`s in TypeScript?
+## 2.  What are `enum`s in TypeScript?
 
 Think of an `enum` as a list of options you define — like directions, user
 roles, or status codes. Instead of writing strings or numbers everywhere, you
@@ -56,7 +56,7 @@ give them **names** to make your code easier to read and manage.
 
 ---
 
-### 🔹 Numeric Enum Example:
+###  Numeric Enum Example:
 
 ```ts
 enum Direction {
@@ -81,7 +81,7 @@ enum Status {
 
 ---
 
-### 💬 String Enum Example:
+###  String Enum Example:
 
 ```ts
 enum Day {
@@ -123,7 +123,7 @@ function greet(role: Role) {
 greet(Role.User); // Output: Hello, user!
 ```
 
-### ✅ Why it's cool:
+###  Why it's cool:
 
 - Fewer hard-coded strings and numbers
 - Easier to read, write, and maintain
@@ -131,7 +131,7 @@ greet(Role.User); // Output: Hello, user!
 
 ---
 
-## 🧩 Final Thoughts
+##  Final Thoughts
 
 Both `keyof` and `enum` may look a little technical at first, but once you
 understand their **purpose**, they become super helpful.

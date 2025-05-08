@@ -168,5 +168,16 @@ squareAsync(-11).catch(console.error); // Output: Error: Negative number not all
 
 
 
+type Person = {
+  name: string;
+  age: number;
+  isStudent: boolean;
+};
+
+type PersonKeys = keyof Person;
+
+
+
+
   //
 }
